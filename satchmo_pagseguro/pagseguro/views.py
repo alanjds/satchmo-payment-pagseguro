@@ -21,7 +21,7 @@ import logging
 import urllib2
 from django.views.decorators.csrf import csrf_exempt
 
-from pagseguropy.pagseguro import Pagseguro
+from pypagseguro.pagseguro import Pagseguro
 
 log = logging.getLogger()
 
