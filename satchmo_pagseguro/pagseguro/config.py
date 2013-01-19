@@ -65,7 +65,7 @@ ModuleValue(PAYMENT_GROUP,
     'MODULE',
     description=_('Implementation module'),
     hidden=True,
-    default = 'payment.modules.pagseguro'),
+    default = 'satchmo_pagseguro.pagseguro'),
 
 StringValue(PAYMENT_GROUP,
     'KEY',
