@@ -32,10 +32,20 @@ def parse_dependency_links(file_name):
 
     return dependency_links
 
+print parse_requirements('requirements.txt')
+print parse_dependency_links('requirements.txt')
+
+template_patterns = [
+    'pagseguro/templates/shop/checkout/pagseguro/*.html'
+]
+
+packages = find_packages(exclude=["tests"]) #['satchmo_pagseguro']
+
 setup(
     name = "satchmo-payment-pagseguro",
     version = "0.1-dev",
-    packages = find_packages(exclude=["tests"]), #['satchmo_pagseguro'],
+    packages = packages,
+    package_data=dict( [(package_name, template_patterns) for package_name in packages] ),
     test_suite='tests.suite',
     zip_safe = False,
     author = "Alan Justino da Silva",
