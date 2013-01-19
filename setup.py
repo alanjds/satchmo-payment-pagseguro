@@ -32,8 +32,8 @@ def parse_dependency_links(file_name):
 
     return dependency_links
 
-print parse_requirements('requirements.txt')
-print parse_dependency_links('requirements.txt')
+#print parse_requirements('requirements.txt')
+#print parse_dependency_links('requirements.txt')
 
 template_patterns = [
     'pagseguro/templates/shop/checkout/pagseguro/*.html'
