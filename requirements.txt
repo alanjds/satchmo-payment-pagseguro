@@ -1,1 +1,2 @@
 Satchmo
+-e https://github.com/pagseguro/python/archive/master.zip#egg=pypagseguro
