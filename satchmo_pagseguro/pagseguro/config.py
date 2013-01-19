@@ -76,7 +76,6 @@ StringValue(PAYMENT_GROUP,
 StringValue(PAYMENT_GROUP,
     'TOKEN',
     description=_("PagSeguro Token"),
-    hidden=True,
     default = '8A0BD42CD7AC4009BAC6BB96FE960D8B'),
 
 StringValue(PAYMENT_GROUP,
